@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        DIV {
+            padding: 20px 30px;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        H2 {
+          letter-spacing: 2px;
+          color: #222;
+          font-size: 26px;
+          padding-left: 15px;
+          margin-bottom: 15px;
+        }
+        input {
+            padding:9px;
+            border: 2px;
+            border-radius:20px;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        }
+        a {
+          text-decoration: none;
+          outline: none;
+          display: block;
+          padding: 6px 0;
+          letter-spacing: 1px;
+          font-weight: 300;
+          color: #0c0117;
+          transition: .3s linear;
+        }
+        a:hover {color: #DEB887;}
+    </style>
+</head>
+<body  style="text-align:center">
+<div>
+    <h2>Введите номер рейса, по которому хотите получить рейтинг</h2>
+    <form action="" method="post">
+        <input type="text" placeholder="Номер рейса" name="r_num">
+        <input type="submit" value="Поиск">
+    </form>
+    <a href="{{url_for('menu.menu')}}">Назад</a>
+  </div>
+</body>
+</html>

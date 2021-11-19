@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+         DIV {
+            padding: 20px 30px;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        H2 {
+          letter-spacing: 2px;
+          color: #0c0117;
+          font-size: 26px;
+          padding-left: 15px;
+          margin-bottom: 15px;
+        }
+        TABLE {
+          letter-spacing: 2px;
+          color: #0c0117;
+          font-size: 14px;
+          padding-left: 15px;
+          margin-bottom: 15px;
+        }
+        a {
+          text-decoration: none;
+          outline: none;
+          display: block;
+          padding: 6px 0;
+          letter-spacing: 1px;
+          font-weight: 300;
+          color: #0c0117;
+          transition: .3s linear;
+        }
+        a:hover {color: #DEB887;}
+    </style>
+</head>
+<body style="text-align:center">
+    <div>
+    <h2>{{ head }}</h2>
+    <center>
+        <table style="width:70%; margin:center">
+
+         {% if list %}
+          <tr>
+           {% for key in list[0] %}
+           <th style="background:#DEB887"> {{ key }} </th>
+           {% endfor %}
+          </tr>
+          {% endif %}
+
+          {% for dict_item in list %}
+            <tr>
+                {% for value in dict_item.values() %}
+                <td style="background:#FFF8DC"> {{ value }} </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+            <a href="#" onclick="history.back()">Back</a>
+        </center>
+    </div>
+</body>
+</html>

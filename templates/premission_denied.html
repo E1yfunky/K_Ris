@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <style type="text/css">
+        DIV {
+            padding: 20px 30px;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        DIV a {
+          text-decoration: none;
+          outline: none;
+          display: block;
+          padding: 6px 0;
+          letter-spacing: 1px;
+          font-weight: 300;
+          color: #0c0117;
+          transition: .3s linear;
+        H1 {
+          letter-spacing: 2px;
+          color: #0c0117;
+          font-size: 26px;
+          padding-left: 15px;
+          margin-bottom: 15px;
+        }
+        UL {
+          padding: 0;
+          list-style: none;
+        }
+        DIV a:hover {color: #DEB887;}
+    </style>
+</head>
+<body style="text-align:center">
+<h1>Недостаточно прав</h1>
+<center>
+  <div>
+    <a href="{{url_for('index')}}">Главное меню</a>
+    <a href="#" onclick="history.back()">Back</a>
+  </div>
+</center>
+</body>
+</html>

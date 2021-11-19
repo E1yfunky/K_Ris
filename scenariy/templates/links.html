@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask</title>
+    <style type="text/css">
+        DIV {
+            padding: 20px 30px;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        H2 {
+          letter-spacing: 2px;
+          color: #0c0117;
+          font-size: 26px;
+          padding-left: 15px;
+          margin-bottom: 15px;
+        }
+        UL {
+          padding: 0;
+          list-style: none;
+        }
+        UL a:before {
+          content: "∘";
+          margin-right: 14px;
+        }
+        UL a {
+          text-decoration: none;
+          outline: none;
+          display: block;
+          padding: 6px 0;
+          letter-spacing: 1px;
+          font-weight: 300;
+          color: #0c0117;
+          transition: .3s linear;
+        }
+        UL a:hover {color: #DEB887;}
+    </style>
+</head>
+
+<body style="text-align:center">
+    <div>
+        <h2>Меню запросов</h2>
+        <ul>
+            <li><a href="{{url_for('menu.resume')}}">Отчет по милям</a></li>
+            <li><a href="{{url_for('menu.r_y')}}">Отчет по годам</a></li>
+            <li><a href="{{url_for('menu.search_by_num')}}">Рейтинг клиентов на рейсе</a></li>
+            <li><a href="{{url_for('menu.never_buy')}}">Пользователи, никогда не покупавшие билеты</a></li>
+            <li><a href="{{url_for('menu.empty_date')}}">Пользователи, не покупавшие билеты за месяц</a></li>
+            <li><a href="{{url_for('menu.most_often')}}">Пользователи, покупавшие билеты чаще всех за период</a></li>
+            <li><a href="{{url_for('index')}}">Назад</a></li>
+        </ul>
+    </div>
+</body>
+</html>

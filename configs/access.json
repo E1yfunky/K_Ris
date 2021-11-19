@@ -1,0 +1,5 @@
+{
+  "admin" : ["auth", "resume", "r_y", "search_by_num", "never_buy", "empty_date", "most_often", "menu", ""],
+  "usual" : ["auth", "r_y", "never_buy", "empty_date", "most_often", "menu", ""],
+  "unauthorized" : ["auth", ""]
+}
